@@ -1,0 +1,14 @@
+# chonk.chat web client.
+# Run the Stoat backend separately (https://github.com/stoatchat/self-hosted),
+# then point VITE_API_URL at its public API URL and put this behind your reverse proxy.
+services:
+  chonk-web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-https://api.chonk.chat}
+    image: chonk-web:latest
+    restart: unless-stopped
+    ports:
+      - "8080:80"

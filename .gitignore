@@ -1,0 +1,13 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+release
+desktop/mingw-shim/.keep
+desktop/dist
+desktop/*.exe
+desktop/*.syso
+desktop/build

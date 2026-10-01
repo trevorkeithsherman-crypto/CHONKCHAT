@@ -1,0 +1,31 @@
+{
+  "name": "chonk-chat",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "chonk.chat \u2014 a highly themable, playful chat client for the Stoat backend",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "dist:win": "bash scripts/build-win.sh"
+  },
+  "dependencies": {
+    "@solid-primitives/set": "^0.7.4",
+    "@solidjs/router": "^0.15.3",
+    "solid-js": "^1.9.7",
+    "stoat.js": "^7.3.6",
+    "ulid": "^3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-solid": "^2.11.6"
+  },
+  "author": "Trevor Sherman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trevorkeithsherman/chonk.git"
+  }
+}
